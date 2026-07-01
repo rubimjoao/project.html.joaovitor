@@ -1,7 +1,142 @@
 <!DOCTYPE html>
-<html>
- <head>
-   <html lang= PT-BR>
-     <meta charset =UTF-8>
- </head> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Poderoso Timão</title>
+    <style>
+        /* Reset de estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #111;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #e11b22; /* Linha vermelha discreta em referência ao escudo */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-style: italic;
+            color: #ccc;
+        }
+
+        /* Conteúdo Principal */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            border-left: 5px solid #000;
+        }
+
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #000;
+            text-transform: uppercase;
+        }
+
+        /* Lista de Conquistas */
+        .conquistas {
+            list-style: none;
+        }
+
+        .conquistas li {
+            background: #f9f9f9;
+            margin: 10px 0;
+            padding: 12px 20px;
+            border-radius: 4px;
+            border-left: 3px solid #ccc;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .conquistas li:hover {
+            border-left-color: #000;
+            background: #f1f1f1;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+
+        footer span {
+            color: #e11b22;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sport Club Corinthians Paulista</h1>
+        <p>O Time do Povo • Fundado em 1910</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="card">
+            <h2>História</h2>
+            <p>Fundado por um grupo de operários no bairro do Bom Retiro, em São Paulo, o Corinthians nasceu para ser o clube dos excluídos e da classe trabalhadora. Ao longo das décadas, transformou-se em uma das maiores potências do futebol mundial, movido por uma das torcidas mais apaixonadas e fiéis do planeta: a Fiel Bando de Loucos.</p>
+        </section>
+
+        <section class="card">
+            <h2>Principais Títulos</h2>
+            <ul class="conquistas">
+                <li>Mundiais de Clubes da FIFA <span>2</span></li>
+                <li>Copa Libertadores da América <span>1</span></li>
+                <li>Campeonatos Brasileiros <span>7</span></li>
+                <li>Copas do Brasil <span>3</span></li>
+                <li>Campeonatos Paulistas <span>30</span></li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>O Lema</h2>
+            <p style="font-size: 1.2rem; font-style: italic; text-align: center; font-weight: 500;">
+                "Louco por ti, Corinthians!"
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Desenvolvido com orgulho corinthiano <span>♥</span></p>
+    </footer>
+
+</body>
 </html>
